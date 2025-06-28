@@ -80,11 +80,32 @@ cd ../..
 ```
 ## 1.1  Installing mmcv
 mmcv in windows might not get installed using  
-'''bash
+```bash
 pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.4/index.html
 
-'''
+```
+Refer to https://mmcv.readthedocs.io/en/latest/get_started/build.html  for building source with desired torch and cuda version
 
+Prerequisite
+The following software is required for building MMCV on windows. Install them first.
+
+Git
+
+During installation, tick add git to Path.
+
+Visual Studio Community 2019
+
+A compiler for C++ and CUDA codes.
+
+Miniconda
+
+Official distributions of Python should work too.
+
+CUDA 11.8
+
+Not required for building CPU version.
+
+Customize the installation if necessary. As a recommendation, skip the driver installation if a newer version is already installed.
 ### 2. Installing usdsgen (US DownStream Generalizer)
 
 usdsgen is a USFM-based ultrasound downstream task generalization package that can be used for downstream tasks on ultrasound images.
