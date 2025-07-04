@@ -78,20 +78,18 @@ pip install -v -e .
 cd ../..
 
 ```
-## 1.1  Installing mmcv
+## 1.1  Installing mmcv in windows
 mmcv in windows might not get installed using  
 ```bash
 pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.4/index.html
 
 ```
-Refer to https://mmcv.readthedocs.io/en/latest/get_started/build.html  for building source with desired torch and cuda version
+Refer to https://mmcv.readthedocs.io/en/latest/get_started/build.html#build-on-windows  for building source with desired torch and cuda version
 
 Prerequisite
 The following software is required for building MMCV on windows. Install them first.
 
 Git
-
-During installation, tick add git to Path.
 
 Visual Studio Community 2019
 
@@ -99,11 +97,9 @@ A compiler for C++ and CUDA codes.
 
 Miniconda
 
-Official distributions of Python should work too.
-
 CUDA 11.8
 
-Not required for building CPU version.
+📌Note: If using cmd.exe, check for alternative commands to be used as, some of the commands wont work in cmd.exe
 
 Customize the installation if necessary. As a recommendation, skip the driver installation if a newer version is already installed.
 ### 2. Installing usdsgen (US DownStream Generalizer)
